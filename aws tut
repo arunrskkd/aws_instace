@@ -1,0 +1,17 @@
+create instance
+after that the key will be downloaded in extention key.pem
+new folder aws
+paste key in that.open terminal in that folder
+then in aws dashboard instance connect
+we will get the code to enter in terminal.
+it will connect to instance
+make sure that security group is added SSH then onli connect through terminal
+
+then use putty to tranfer files.
+tutorial is there when we connect
+
+pscp -i C:\path\my-key-pair.ppk C:\path\Sample_file.txt ec2-user@[ipv6-address]:/home/ec2-user/Sample_file.txt
+
+
+create instance --> connect --> connect with code seen  --> open another and install putty tools --> puttygen mykey.pem -o mykey.ppk  -->
+pscp -r -i testMode.ppk server/* ubuntu@ec2-13-59-205-232.us-east-2.compute.amazonaws.com:/home/ubuntu/server/
