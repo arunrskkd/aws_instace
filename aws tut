@@ -20,3 +20,5 @@ pscp -r -i testMode.ppk server/* ubuntu@ec2-13-59-205-232.us-east-2.compute.amaz
 need to create sequrity group ssh ,http ,https, and custom port 3000 to listen to in node app.
 
 http.createserver().listen(3000)
+
+https://hackernoon.com/tutorial-creating-and-managing-a-node-js-server-on-aws-part-1-d67367ac5171
