@@ -15,3 +15,8 @@ pscp -i C:\path\my-key-pair.ppk C:\path\Sample_file.txt ec2-user@[ipv6-address]:
 
 create instance --> connect --> connect with code seen  --> open another and install putty tools --> puttygen mykey.pem -o mykey.ppk  -->
 pscp -r -i testMode.ppk server/* ubuntu@ec2-13-59-205-232.us-east-2.compute.amazonaws.com:/home/ubuntu/server/
+
+
+need to create sequrity group ssh ,http ,https, and custom port 3000 to listen to in node app.
+
+http.createserver().listen(3000)
